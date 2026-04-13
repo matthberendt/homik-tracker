@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const PORT = 6741;
+const PORT = 6742; //beta port
 const DB_FILE = path.join(__dirname, 'database.json');
 const DB_TMP = path.join(__dirname, `.database.json.${process.pid}.tmp`);
 const CHECK_INTERVAL = 30_000;

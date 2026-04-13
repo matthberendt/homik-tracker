@@ -391,3 +391,18 @@ fetchHistory();
 fetchRankings();
 setInterval(fetchHistory, 60_000);
 setInterval(fetchRankings, 60_000);
+
+// --- API Dropdown ---
+const $apiBtn = document.getElementById('api-btn');
+const $apiMenu = document.getElementById('api-menu');
+
+$apiBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    $apiMenu.classList.toggle('hidden');
+});
+
+document.addEventListener('click', (e) => {
+    if (!$apiMenu.contains(e.target) && !$apiBtn.contains(e.target)) {
+        $apiMenu.classList.add('hidden');
+    }
+});
