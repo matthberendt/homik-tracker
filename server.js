@@ -129,7 +129,6 @@ async function fetchCloudflareIncidents() {
 
 fetchCloudflareIncidents();
 
-const API_KEY = process.env.API_KEY || 'APIKEY';
 
 app.use(express.static(path.join(__dirname, 'public')));
 
