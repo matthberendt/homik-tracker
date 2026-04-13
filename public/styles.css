@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap');
 
 :root {
     --bg: #fafafa;
@@ -37,6 +37,34 @@ body {
     transition: background 0.3s, color 0.3s;
     min-height: 100vh;
     padding: 2.5rem;
+}
+
+/* ---- header ---- */
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    letter-spacing: -0.04em;
+    color: var(--fg);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+#credits {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+    opacity: 0.8;
 }
 
 /* ---- layout ---- */
@@ -366,6 +394,14 @@ body {
 @media (max-width: 640px) {
     body {
         padding: 1.25rem;
+    }
+
+    #logo {
+        font-size: 1.8rem;
+    }
+
+    #credits {
+        font-size: 0.7rem;
     }
 
     #app {
